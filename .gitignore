@@ -1,0 +1,8 @@
+.DS_Store
+/node_modules/
+/football/pre/__pycache__/
+/__pycache__/
+/dist/
+/.vscode/
+/.idea/
+MySQL/
