@@ -388,6 +388,11 @@ export default {
     },
     submitQuery () {
       this.loading = true
+      if (this.form.tournament.length === 1) {
+        this.form.tournament = this.form.tournament[0]
+      } else {
+        this.form.tournament = this.form.tournament[1]
+      }
       let t = this.form.tournament
       let n = this.form.name
       let d1 = this.form.date1
