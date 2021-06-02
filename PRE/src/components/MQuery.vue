@@ -445,7 +445,7 @@ export default {
           day1 = String(day1)
         }
         if (day2 < 10) {
-          day1 = '0' + String(day2)
+          day2 = '0' + String(day2)
         } else {
           day2 = String(day2)
         }
