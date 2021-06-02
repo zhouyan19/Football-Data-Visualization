@@ -390,8 +390,9 @@ export default {
       this.loading = true
       if (this.form.tournament.length === 1) {
         this.form.tournament = this.form.tournament[0]
-      } else {
+      } else if (this.form.tournament.length === 2) {
         this.form.tournament = this.form.tournament[1]
+      } else {
       }
       let t = this.form.tournament
       let n = this.form.name
@@ -453,7 +454,7 @@ export default {
         d2 = String(t2.getFullYear()) + '-' + mon2 + '-' + day2
       } else {
       }
-      // console.log(t, n, d1, d2, r)
+      console.log(t, n, d1, d2, r)
       getGames(t, n, d1, d2, r).then((jsonData) => {
         console.log(jsonData)
         console.log('games:', jsonData['games'])

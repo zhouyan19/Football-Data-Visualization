@@ -270,8 +270,9 @@ export default {
           d1 = String(t1.getFullYear()) + '-' + mon1 + '-' + day1
           if (this.form.tournament.length === 1) {
             this.form.tournament = this.form.tournament[0]
-          } else {
+          } else if (this.form.tournament.length === 2) {
             this.form.tournament = this.form.tournament[1]
+          } else {
           }
           editGame({
             date: d1,
